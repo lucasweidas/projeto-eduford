@@ -4,7 +4,7 @@ $visitante_email = $_POST['email'];
 $assunto = $_POST['assunto'];
 $mensagem = $_POST['mensagem'];
 
-$email_from = 'info@contato.com';
+$email_from = 'info@lucasweidas.github.io';
 
 $email_assunto = 'Novo Formulário Recebido';
 
