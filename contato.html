@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universidade Eduford</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/da6342bd32.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Header -->
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="imagens/logo.png" alt="Logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fas fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">INÍCIO</a></li>
+                    <li><a href="sobre.html">SOBRE</a></li>
+                    <li><a href="cursos.html">CURSOS</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contato.html">CONTATO</a></li>
+                </ul>
+            </div>
+            <i class="fas fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <h1>Fale Conosco</h1>
+    </section>
+
+    <!-- Fale Conosco -->
+    <section class="location">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7349.017140687626!2d-43.178772385474396!3d-22.93149011260273!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m3!3e6!4m0!4m0!5e0!3m2!1spt-BR!2sbr!4v1638284229715!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+
+    <section class="contact-us">
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <i class="fas fa-home"></i>
+                    <span>
+                        <h5>Rua Guaxinim, Prédio da Mulas</h5>
+                        <p>Rio de Janeiro, Rio de Janeiro, BR</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fas fa-phone-alt"></i>
+                    <span>
+                        <h5>+55 30471952894</h5>
+                        <p>Segunda a Sexta, 08H às 18H</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fas fa-envelope"></i>
+                    <span>
+                        <h5>info@contato.com</h5>
+                        <p>Envie-nos a sua dúvida</p>
+                    </span>
+                </div>
+            </div>
+
+            <div class="contact-col">
+                <form action="form-handler.php" method="post">
+                    <input type="text" name="nome" placeholder="Digite seu nome" required>
+                    <input type="email" name="email" placeholder="Digite seu Email" required>
+                    <input type="text" name="assunto" placeholder="Insira o assunto" required>
+                    <textarea rows="8" name="mensagem" placeholder="Mensagem" required></textarea>
+                    <button type="submit" class="hero-btn red-btn">Enviar Mensagem</button>
+                </form>    
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <section class="footer">
+        <h4>Conheça-nos</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, praesentium amet. Esse labore qui molestiae obcaecati neque maxime id explicabo,<br>et in similique ducimus repellendus rerum nam dignissimos, magni provident?</p>
+
+        <div class="icons">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-linkedin-in"></i>
+        </div>
+        <p>Feito com <i class="far fa-heart"></i> por Lucas Weidas</p>
+    </section>
+
+    <!-- JavaScrip para o Menu -->
+    <script>
+        var navLinks = document.querySelector("#navLinks")
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>

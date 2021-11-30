@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universidade Eduford</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/da6342bd32.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Header -->
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="imagens/logo.png" alt="Logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fas fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">INÍCIO</a></li>
+                    <li><a href="sobre.html">SOBRE</a></li>
+                    <li><a href="cursos.html">CURSOS</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contato.html">CONTATO</a></li>
+                </ul>
+            </div>
+            <i class="fas fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <h1>Sobre Nós</h1>
+    </section>
+
+    <!-- Sobre Nós - Conteúdo -->
+    <section class="about-us">
+        <div class="row">
+            <div class="about-col">
+                <h1>Nós somos a maior universidade do mundo</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci, odit officia numquam magnam rem consequatur pariatur, modi fugit saepe aliquid quasi magni quas error tempore non unde. Harum ratione explicabo blanditiis, aliquid tempore odio, nostrum suscipit velit dolorem optio veniam placeat! Reiciendis, illum aspernatur? Eius velit dolores excepturi, in aut, nostrum placeat vel nulla impedit consequuntur ipsum maxime necessitatibus dolore.</p>
+                <a href="" class="hero-btn red-btn">EXPLORAR</a>
+            </div>
+            <div class="about-col">
+                <img src="imagens/about.jpg" alt="Sobre">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <section class="footer">
+        <h4>Conheça-nos</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, praesentium amet. Esse labore qui molestiae obcaecati neque maxime id explicabo,<br>et in similique ducimus repellendus rerum nam dignissimos, magni provident?</p>
+
+        <div class="icons">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-linkedin-in"></i>
+        </div>
+        <p>Feito com <i class="far fa-heart"></i> por Lucas Weidas</p>
+    </section>
+
+    <!-- JavaScrip para o Menu -->
+    <script>
+        var navLinks = document.querySelector("#navLinks")
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
