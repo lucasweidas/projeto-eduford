@@ -4,7 +4,7 @@ $visitante_email = $_POST['email'];
 $assunto = $_POST['assunto'];
 $mensagem = $_POST['mensagem'];
 
-$email_from = 'info@lucasweidas.github.io';
+$email_from = 'info@naovaifuncionar.com';
 
 $email_assunto = 'Novo Formulário Recebido';
 
@@ -15,9 +15,9 @@ $email_body = "Nome de Usuário: $nome.\n".
 
 $to = 'frangoassado372@gmail.com';
 
-$headers = "From: $email_from \r\n";
+$headers = "De: $email_from \r\n";
 
-$headers .= "Reply-to: $visitante_email \r\n";
+$headers .= "Corresponde à: $visitante_email \r\n";
 
 mail($to, $email_assunto, $email_body, $headers);
 
